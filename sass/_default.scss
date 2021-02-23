@@ -10,7 +10,6 @@
     height: 100%;
     font-family: $main_font;
     -webkit-font-smoothing: antialiased;
-    background: green;
   }
 
   h1,
@@ -68,7 +67,8 @@
   }
 
   a:hover,
-  a:focus {
+  a:focus,
+  a:-webkit-any-link {
     text-decoration: none;
     outline: none;
   }
