@@ -1,5 +1,5 @@
 /*---------------------
-  Newsfeed
+  Message Page
 -----------------------*/
 .news__left {
     width: calc(26% - 30px);
@@ -256,6 +256,8 @@
     background: $white-color;
     padding: 30px;
     height: 1140px;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
 }
 
 .message__right__top {
@@ -307,24 +309,24 @@
 
 .message__chat__item__audio {
     margin-bottom: 10px;
-}
 
-.plyr--audio .plyr__control.plyr__tab-focus, .plyr--audio .plyr__control:hover, .plyr--audio .plyr__control[aria-expanded=true] {
-    background: transparent;
-    color: $primary-color;
-}
-
-.plyr button {
-    color: $primary-color;
-}
-
-.plyr--full-ui input[type=range] {
-    color: $primary-color;
-}
-
-.plyr__control svg {
-    height: 10px;
-    width: 10px;
+    .plyr--audio .plyr__control.plyr__tab-focus, .plyr--audio .plyr__control:hover, .plyr--audio .plyr__control[aria-expanded=true] {
+        background: transparent;
+        color: $primary-color;
+    }
+    
+    .plyr button {
+        color: $primary-color;
+    }
+    
+    .plyr--full-ui input[type=range] {
+        color: $primary-color;
+    }
+    
+    .plyr__control svg {
+        height: 10px;
+        width: 10px;
+    }
 }
 
 .message__chat__item {

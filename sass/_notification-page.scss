@@ -1,0 +1,110 @@
+/*---------------------
+  Notification
+-----------------------*/
+.news__right__notify {
+    background: $white-color;
+    padding: 25px 30px 20px;
+    border-radius: 15px;
+}
+
+.news__notify__top {
+    position: relative;
+    border-bottom: 1px solid #ebebeb;
+    padding-bottom: 15px;
+    margin-bottom: 30px;
+
+    h6 {
+        font-weight: 600;
+        text-transform: uppercase;
+    }
+
+    .n__number {
+        background: #e02529;
+        height: 22px;
+        width: 22px;
+        border-radius: 50%;
+        text-align: center;
+        line-height: 22px;
+        position: absolute;
+        right: 0;
+        top: -2px;
+        
+        span {
+            font-size: 12px;
+            font-weight: 500;
+            display: inline-block;
+            color: $white-color;
+        }
+    }
+}
+
+.news__notify__item {
+    display: block;
+    overflow: hidden;
+    margin-left: -6px;
+    padding-left: 6px;
+    padding-top: 2px;
+    margin-bottom: 16px;
+
+    &:last-child {
+        margin-bottom: 0;
+    }
+}
+
+.news__notify__item__pic {
+    float: left;
+    margin-right: 20px;
+    position: relative;
+
+    img {
+        height: 50px;
+        width: 50px;
+        border-radius: 20px;
+    }
+
+    .new__notify {
+        height: 12px;
+        width: 12px;
+        background: $white-color;
+        border-radius: 50%;
+        position: absolute;
+        left: -6px;
+        top: 50%;
+        margin-top: -6px;
+
+        &:after {
+            position: absolute;
+            left: 2px;
+            top: 2px;
+            height: 8px;
+            width: 8px;
+            background: $primary-color;
+            border-radius: 50%;
+            content: "";
+        }
+    }
+}
+
+.news__notify__item__text {
+    overflow: hidden;
+    position: relative;
+    top: -5px;
+
+    p {
+        margin-bottom: 2px;
+        font-size: 14px;
+        color: $heading-color;
+        line-height: 20px;
+
+        a {
+            color: $heading-color;
+            font-weight: 500;
+        }
+    }
+
+    .notify__time {
+        font-size: 12px;
+        display: block;
+        color: #888;
+    }
+}
