@@ -15,6 +15,7 @@
     <!-- Css Styles -->
     <link rel="stylesheet" href="css/bootstrap.min.css" type="text/css">
     <link rel="stylesheet" href="css/elegant-icons.css" type="text/css">
+    <link rel="stylesheet" href="css/jquery-ui.min.css" type="text/css">
     <link rel="stylesheet" href="css/plyr.css" type="text/css">
     <link rel="stylesheet" href="css/main.css" type="text/css">
 </head>
@@ -355,97 +356,99 @@
                     </div>
                 </div>
                 <div class="message__right__content">
-                    <div class="message__right__top">
-                        <div class="message__right__top__profile">
-                            <a href="#" class="news__right__member__item">
-                                <div class="news__right__member__item__pic">
+                    <div class="message__right__content__inner">
+                        <div class="message__right__top">
+                            <div class="message__right__top__profile">
+                                <a href="#" class="news__right__member__item">
+                                    <div class="news__right__member__item__pic">
+                                        <img src="img/active/15.jpg" alt="">
+                                        <span class="a_status"></span>
+                                    </div>
+                                    <div class="news__right__member__item__text">
+                                        <h6>Vera Riley</h6>
+                                        <span>Lorem ipsum dolor sit amet</span>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="message__right__top__items">
+                                <a href="#"><img src="img/icons/m-icon/m-1.png" alt=""></a>
+                                <a href="#"><img src="img/icons/m-icon/m-2.png" alt=""></a>
+                                <a href="#"><img src="img/icons/m-icon/m-3.png" alt=""></a>
+                            </div>
+                        </div>
+                        <div class="message__right__chat">
+                            <div class="message__chat__item message__chat__item--right">
+                                <span class="message__time">9:00am</span>
+                                <div class="message__chat__item__text">
+                                    <p>Consectetur adipiscing elit</p>
+                                </div>
+                            </div>
+                            <div class="message__chat__item">
+                                <span class="message__time">9:00am</span>
+                                <div class="message__chat__item__pic">
                                     <img src="img/active/15.jpg" alt="">
-                                    <span class="a_status"></span>
                                 </div>
-                                <div class="news__right__member__item__text">
-                                    <h6>Vera Riley</h6>
-                                    <span>Lorem ipsum dolor sit amet</span>
-                                </div>
-                            </a>
-                        </div>
-                        <div class="message__right__top__items">
-                            <a href="#"><img src="img/icons/m-icon/m-1.png" alt=""></a>
-                            <a href="#"><img src="img/icons/m-icon/m-2.png" alt=""></a>
-                            <a href="#"><img src="img/icons/m-icon/m-3.png" alt=""></a>
-                        </div>
-                    </div>
-                    <div class="message__right__chat">
-                        <div class="message__chat__item message__chat__item--right">
-                            <span class="message__time">9:00am</span>
-                            <div class="message__chat__item__text">
-                                <p>Consectetur adipiscing elit</p>
-                            </div>
-                        </div>
-                        <div class="message__chat__item">
-                            <span class="message__time">9:00am</span>
-                            <div class="message__chat__item__pic">
-                                <img src="img/active/15.jpg" alt="">
-                            </div>
-                            <div class="message__chat__item__text">
-                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore.</p>
-                                <div class="message__chat__item__audio">
-                                    <audio id="player2" controls>
-                                        <source src="audio/1.mp3" type="audio/mp3" />
-                                      </audio>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="message__chat__item message__chat__item--right">
-                            <span class="message__time">9:00am</span>
-                            <div class="message__chat__item__text">
-                                <p>
-                                    Consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore.
-                                    <span class="r_icon"><img src="img/icons/m-icon/react.png" alt=""></span>
-                                </p>
-                            </div>
-                        </div>
-                        <div class="message__chat__item message__chat__item--pic">
-                            <span class="message__time">9:00am</span>
-                            <div class="message__chat__item__pic">
-                                <img src="img/active/15.jpg" alt="">
-                            </div>
-                            <div class="message__chat__pic__item">
-                                <a href="#" class="f_pic"><img src="img/message/1.jpg" alt=""></a>
-                                <a href="#"><img src="img/message/2.jpg" alt=""></a>
-                                <a href="#"><img src="img/message/3.jpg" alt=""></a>
-                            </div>
-                        </div>
-                        <div class="message__chat__item message__chat__item--right">
-                            <span class="message__time">9:00am</span>
-                            <div class="message__chat__item__text">
-                                <p>Consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore.</p>
-                                <img src="img/icons/m-icon/seen.png" alt="" class="msg__seen">
-                            </div>
-                        </div>
-                        <div class="message__right__chat__form">
-                            <form action="#">
-                                <div class="message__chat__form__text">
-                                    <a href="#"><img src="img/icons/m-icon/4.png" alt=""></a>
-                                    <textarea placeholder="Type a message"></textarea>
-                                    <button type="submit"><img src="img/icons/m-icon/5.png" alt=""></button>
-                                </div>
-                                <div class="message__chat__form__options">
-                                    <div class="message__chat__form__options__list">
-                                        <div class="message__chat__form__item">
-                                            <a href="#"><img src="img/icons/m-icon/6.png" alt=""></a>
-                                        </div>
-                                        <div class="message__chat__form__item">
-                                            <a href="#"><img src="img/icons/m-icon/7.png" alt=""></a>
-                                        </div>
-                                        <div class="message__chat__form__item">
-                                            <a href="#"><img src="img/icons/m-icon/8.png" alt=""></a>
-                                        </div>
-                                        <div class="message__chat__form__item">
-                                            <a href="#"><img src="img/icons/m-icon/9.png" alt=""></a>
-                                        </div>
+                                <div class="message__chat__item__text">
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore.</p>
+                                    <div class="message__chat__item__audio">
+                                        <audio id="player2" controls>
+                                            <source src="audio/1.mp3" type="audio/mp3" />
+                                          </audio>
                                     </div>
                                 </div>
-                            </form>
+                            </div>
+                            <div class="message__chat__item message__chat__item--right">
+                                <span class="message__time">9:00am</span>
+                                <div class="message__chat__item__text">
+                                    <p>
+                                        Consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore.
+                                        <span class="r_icon"><img src="img/icons/m-icon/react.png" alt=""></span>
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="message__chat__item message__chat__item--pic">
+                                <span class="message__time">9:00am</span>
+                                <div class="message__chat__item__pic">
+                                    <img src="img/active/15.jpg" alt="">
+                                </div>
+                                <div class="message__chat__pic__item">
+                                    <a href="#" class="f_pic"><img src="img/message/1.jpg" alt=""></a>
+                                    <a href="#"><img src="img/message/2.jpg" alt=""></a>
+                                    <a href="#"><img src="img/message/3.jpg" alt=""></a>
+                                </div>
+                            </div>
+                            <div class="message__chat__item message__chat__item--right">
+                                <span class="message__time">9:00am</span>
+                                <div class="message__chat__item__text">
+                                    <p>Consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore.</p>
+                                    <img src="img/icons/m-icon/seen.png" alt="" class="msg__seen">
+                                </div>
+                            </div>
+                            <div class="message__right__chat__form">
+                                <form action="#">
+                                    <div class="message__chat__form__text">
+                                        <a href="#"><img src="img/icons/m-icon/4.png" alt=""></a>
+                                        <textarea placeholder="Type a message"></textarea>
+                                        <button type="submit"><img src="img/icons/m-icon/5.png" alt=""></button>
+                                    </div>
+                                    <div class="message__chat__form__options">
+                                        <div class="message__chat__form__options__list">
+                                            <div class="message__chat__form__item">
+                                                <a href="#"><img src="img/icons/m-icon/6.png" alt=""></a>
+                                            </div>
+                                            <div class="message__chat__form__item">
+                                                <a href="#"><img src="img/icons/m-icon/7.png" alt=""></a>
+                                            </div>
+                                            <div class="message__chat__form__item">
+                                                <a href="#"><img src="img/icons/m-icon/8.png" alt=""></a>
+                                            </div>
+                                            <div class="message__chat__form__item">
+                                                <a href="#"><img src="img/icons/m-icon/9.png" alt=""></a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -457,6 +460,8 @@
     <!-- Js Plugins -->
     <script src="js/vendor/jquery-3.5.1.min.js"></script>
     <script src="js/vendor/bootstrap.min.js"></script>
+    <script src="js/vendor/jquery.countdown.min.js"></script>
+    <script src="js/vendor/jquery-ui.min.js"></script>
     <script src="js/vendor/plyr.js"></script>
     <script src="js/main.js"></script>
 </body>

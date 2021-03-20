@@ -260,10 +260,16 @@
     border-bottom-right-radius: 20px;
 }
 
+.message__right__content__inner {
+    height: 100%;
+    position: relative;
+}
+
 .message__right__top {
     overflow: hidden;
     padding-bottom: 5px;
     border-bottom: 1px solid #f4f4fe;
+    margin-bottom: 25px;
 }
 
 .message__right__top__profile {
@@ -301,10 +307,6 @@
             margin-right: 0;
         }
     }
-}
-
-.message__right__chat {
-    position: relative;
 }
 
 .message__chat__item__audio {
@@ -521,14 +523,13 @@
 }
 
 .message__right__chat {
-    position: relative;
-    height: 100%;
+    padding-bottom: 80px;
 }
 
 .message__right__chat__form {
     position: absolute;
     left: 0;
-    bottom: 63px;
+    bottom: 0;
     width: 100%;
     background: $white-color;
 }

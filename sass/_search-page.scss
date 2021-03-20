@@ -1,0 +1,179 @@
+/*---------------------
+  Search Page
+-----------------------*/
+.search__tab {
+    background: $white-color;
+    padding: 30px 30px 20px;
+    border-radius: 20px;
+    margin-bottom: 20px;
+
+    h6 {
+        font-weight: 600;
+        text-transform: uppercase;
+        margin-bottom: 8px;
+
+        span {
+            color: $primary-color;
+        }
+    }
+
+    .nav {
+        border-bottom: none;
+
+        .nav-item {
+            margin-right: 36px;
+
+            &:last-child {
+                margin-right: 0;
+            }
+
+            .nav-link {
+                font-size: 15px;
+                color: $heading-color;
+                font-weight: 500;
+                margin-bottom: 0;
+                border: none;
+                border-radius: 0;
+                background: transparent;
+                padding: 5px 0;
+
+                &.active {
+                    background: transparent;
+                    text-decoration: underline;
+                }
+            }
+        }
+    }
+}
+
+.search__profile__op {
+    background: $white-color;
+    overflow: hidden;
+    padding: 30px;
+    border-radius: 20px;
+    margin-bottom: 20px;
+
+    &:last-child {
+        margin-bottom: 0;
+    }
+
+    &.search__profile__op--group {
+
+        .search__profile__item__text {
+
+            ul {
+
+                li {
+                    margin-right: 15px;
+                    position: relative;
+
+                    &:last-child {
+                        
+                        &:after {
+                            display: none;
+                        }
+                    }
+
+                    &:after {
+                        position: absolute;
+                        right: -12px;
+                        top: 0;
+                        content: "|";
+                    }
+                }
+            }
+        }
+    }
+}
+
+.search__profile__item {
+    overflow: hidden;
+    float: left;
+}
+
+.search__profile__item__pic {
+    float: left;
+    margin-right: 25px;
+    position: relative;
+
+    img {
+        height: 70px;
+        width: 70px;
+        border-radius: 25px;
+    }
+
+    .a_status {
+        height: 12px;
+        width: 12px;
+        background: $white-color;
+        border-radius: 50%;
+        position: absolute;
+        right: 0;
+        top: 0;
+        z-index: 1;
+        display: inline-block;
+
+        &:after {
+            position: absolute;
+            left: 2px;
+            top: 2px;
+            height: 8px;
+            width: 8px;
+            background: #3CC12E;
+            content: "";
+            border-radius: 50%;
+            z-index: 9;
+        }
+    }
+}
+
+.search__profile__item__text {
+    overflow: hidden;
+    padding-top: 13px;
+
+    h6 {
+
+        a {
+            color: $heading-color;
+            font-weight: 500;
+
+            span {
+                text-decoration: underline;
+            }
+        }
+    }
+
+    ul {
+
+        li {
+            font-size: 13px;
+            color: #888;
+            display: inline-block;
+            list-style: none;
+            margin-right: 2px;
+
+            a {
+                color: #888;
+                text-decoration: underline;
+            }
+
+            &:last-child {
+                margin-right: 0;
+            }
+        }
+    }
+}
+
+.search__profile__item__links {
+    float: right;
+    padding-top: 20px;
+    
+    a {
+        display: inline-block;
+        margin-right: 20px;
+
+        &:last-child {
+            margin-right: 0;
+        }
+    }
+}

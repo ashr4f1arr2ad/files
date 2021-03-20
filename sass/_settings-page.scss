@@ -1,0 +1,122 @@
+/*---------------------
+  Settings
+-----------------------*/
+.settings__content {
+    background: $white-color;
+    padding-bottom: 25px;
+    border-radius: 20px;
+    padding-top: 18px;
+
+    .se__title {
+        font-weight: 600;
+        text-transform: uppercase;
+        margin-bottom: 18px;
+        padding-left: 30px;
+    }
+}
+
+.settings__tab {
+    background: $white-color;
+
+    .nav {
+        border-bottom: none;
+        display: block;
+
+        .nav-item {
+            border-bottom: 1px solid #ebebeb;
+
+            &:last-child {
+                border-bottom: none;
+            }
+            
+            .nav-link {
+                font-size: 16px;
+                font-weight: 500;
+                color: #444;
+                background: transparent;
+                border-radius: 0;
+                width: 100%;
+                text-align: left;
+                padding: 15px 35px 15px 30px;
+                border: none;
+                margin-bottom: 0;
+                position: relative;
+
+                &:after {
+                    position: absolute;
+                    right: 22px;
+                    top: 12px;
+                    content: "\35";
+                    font-family: "ElegantIcons";
+                    font-size: 20px;
+                    color: #707070;
+                }
+
+                &.active {
+                    background: $primary-color;
+                    color: $white-color;
+                    border-color: $primary-color;
+
+                    &:after {
+                        color: $white-color;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.settings__tab__item {
+    margin-left: -25px;
+    border-top: 1px solid #ebebeb;
+    border-left: 1px solid #ebebeb;
+    padding: 16px 30px 0;
+
+    ul {
+
+        li {
+            list-style: none;
+            overflow: hidden;
+            border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+            padding-bottom: 12px;
+            margin-bottom: 12px;
+
+            &:last-child {
+                border-bottom: none;
+                padding-bottom: 0;
+                margin-bottom: 0;
+            }
+
+            a {
+                display: block;
+                position: relative;
+                padding-right: 20px;
+
+                &:after {
+                    position: absolute;
+                    top: -5px;
+                    right: -5px;
+                    content: "\35";
+                    font-family: "ElegantIcons";
+                    font-size: 20px;
+                    color: #444;
+                }
+
+                h6 {
+                    font-size: 14px;
+                    color: #0d0d0d;
+                    width: 200px;
+                    float: left;
+                    line-height: 1.5;
+                }
+    
+                span {
+                    font-size: 14px;
+                    color: #0d0d0d;
+                    display: block;
+                    overflow: hidden;
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,180 @@
+/*---------------------
+  Help Page
+-----------------------*/
+.help__center__left__item {
+    margin-bottom: 24px;
+
+    &:last-child {
+        margin-bottom: 0;
+    }
+
+    .card-heading {
+
+        a[aria-expanded="true"] {
+            color: #222;
+
+            &:before {
+                opacity: 0;
+            }
+
+            &:after {
+                position: absolute;
+                right: 0;
+                top: -2px;
+                content: "\32";
+                font-family: "ElegantIcons";
+            }
+        }
+
+        a {
+            font-size: 16px;
+            color: #444;
+            font-weight: 500;
+            padding-right: 20px;
+            position: relative;
+
+            &:before {
+                position: absolute;
+                right: 0;
+                top: -2px;
+                content: "\33";
+                font-family: "ElegantIcons";
+            }
+        }
+    }
+
+    .card-body {
+        background-color: transparent;
+        border: none;
+        border-radius: 0;
+        padding: 0;
+        padding-top: 12px;
+        padding-bottom: 28px;
+
+        .nav {
+            display: block;
+            border-bottom: none;
+            padding-left: 25px;
+            border-left: 3px solid $primary-color;
+
+            .nav-link {
+                margin-bottom: 0;
+                border: none;
+                border-top-left-radius: 0;
+                border-top-right-radius: 0;
+                background: transparent;
+                padding: 0;
+            }
+
+            .nav-item {
+                margin-bottom: 10px;
+
+                &:last-child {
+                    margin-bottom: 0;
+                }
+
+                .nav-link {
+                    color: #222;
+                    font-size: 15px;
+
+                    &.active {
+                        color: $primary-color;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.help__center__details__item {
+    margin-bottom: 44px;
+
+    &:last-child {
+        margin-bottom: 0;
+    }
+
+    h6 {
+        font-weight: 600;
+        text-transform: uppercase;
+        margin-bottom: 12px;
+    }
+}
+
+.help__center__details__card {
+    border-bottom: 1px solid rgba(17, 17, 17, 0.1);
+    padding: 12px 0;
+
+    &:last-child {
+        padding-bottom: 0;
+        border-bottom: none;
+    }
+
+    .card-body {
+        background: transparent;
+        border: none;
+        padding: 0;
+        padding-top: 12px;
+
+        p {
+            font-size: 14px;
+            color: $heading-color;
+            margin-bottom: 0;
+        }
+
+        ul {
+            padding-left: 16px;
+            margin: 5px 0;
+
+            li {
+                font-size: 14px;
+                color: $heading-color;
+            }
+        }
+    }
+}
+
+.help__center__details__card__heading {
+
+    a[aria-expanded="true"] {
+
+        &:before {
+            opacity: 0;
+        }
+
+        &:after {
+            position: absolute;
+            right: 0;
+            top: -6px;
+            content: "\4b";
+            font-family: "ElegantIcons";
+            font-size: 24px;
+            color: $heading-color;
+        }
+    }
+
+    a {
+        color: $heading-color;
+        font-size: 16px;
+        font-weight: 500;
+        display: block;
+        padding-right: 25px;
+        position: relative;
+
+        &:before {
+            position: absolute;
+            right: 0;
+            top: -6px;
+            content: "\4c";
+            font-family: "ElegantIcons";
+            font-size: 24px;
+            color: $heading-color;
+        }
+    }
+}
+
+.help__center .tab-content {
+    background: $white-color;
+    border-radius: 20px;
+    padding: 30px;
+    margin-left: -30px;
+}
