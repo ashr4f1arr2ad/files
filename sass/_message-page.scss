@@ -1,13 +1,34 @@
 /*---------------------
   Message Page
 -----------------------*/
+.newsfeed {
+
+    &.message {
+
+        @media only screen and (min-width: 75em) and (max-width: 87.5em){ 
+            .container {
+              max-width: 1170px;
+            }
+        }
+    }
+}
+
 .news__left {
-    width: calc(26% - 30px);
-    float: left;
-    margin-right: 30px;
 
     &.left__short {
         width: calc(7% - 30px);
+
+        @include respond (desktop) {
+            width: calc(8% - 30px);
+        }
+
+        @include respond (tab-land) {
+            width: calc(10% - 30px);
+        }
+
+        @include respond (tab-port) {
+            width: 100%;
+        }
 
         .news__left__item {
 
@@ -19,22 +40,38 @@
                 }
 
                 .l__name {
-                    display: none!important;
+                    display: none;
+
+                    @include respond (tab-port) {
+                        display: inline-block;
+                    }
                 }
 
                 .news__left__icon {
                     width: auto;
                     display: inline-block;
+
+                    @include respond (tab-port) {
+                        width: 42px;
+                    }
         
                     .w__icon {
                         left: 22px;
-                    }
 
+                        // @include respond (tab-port) {
+                        //     left: 20px;
+                        // }
+                    }
                 }
                 
                 .n__number {
                     right: 10px;
                     top: 8px;
+
+                    @include respond (tab-port) {
+                        right: 20px;
+                        top: 15px;
+                    }
                 }
             }
         }
@@ -120,16 +157,25 @@
 }
 
 .news__content {
-    background: #f4f4fe;
-    border-radius: 30px;
-    width: 74%;
-    overflow: hidden;
-    padding: 30px;
 
     &.right__long {
         width: 93%;
         padding-left: 15px;
         height: 1200px;
+
+        @include respond (desktop) {
+            width: 92%;
+        }
+
+        @include respond (tab-land) {
+            width: 90%;
+        }
+
+        @include respond (tab-port) {
+            width: 100%;
+            height: auto;
+            padding-left: 30px;
+        }
     }
 }
 
@@ -144,6 +190,14 @@
     overflow: hidden;
     width: 50%;
     float: left;
+
+    @include respond (phone-medium) {
+        width: 70%;
+    }
+
+    @include respond (phone-small) {
+        width: 70%;
+    }
 
     img {
         float: left;
@@ -164,6 +218,12 @@
     float: left;
     height: 1140px;
     overflow-y: auto;
+
+    @include respond (tab-port) {
+        width: auto;
+        float: none;
+        margin-bottom: 40px;
+    }
 }
 
 .message__left__top__links {
@@ -171,9 +231,25 @@
     float: left;
     text-align: right;
 
+    @include respond (phone-medium) {
+        width: 30%;
+    }
+
+    @include respond (phone-small) {
+        width: 30%;
+    }
+
     a {
         display: inline-block;
         margin-right: 25px;
+
+        @include respond (phone-medium) {
+            margin-right: 10px;
+        }
+    
+        @include respond (phone-small) {
+            margin-right: 10px;
+        }
 
         &:last-child {
             margin-right: 0;
@@ -186,7 +262,7 @@
     .news__right__member__item {
         margin-bottom: 0;
         padding: 15px;
-        padding-right: 0;
+        padding-right: 90px;
         border-top-left-radius: 20px;
         border-bottom-left-radius: 20px;
         position: relative;
@@ -215,6 +291,10 @@
 
         h6 {
             font-size: 16px;
+
+            @include respond (desktop) {
+                font-size: 13px;
+            }
         }
     }
 }
@@ -258,6 +338,13 @@
     height: 1140px;
     border-top-right-radius: 20px;
     border-bottom-right-radius: 20px;
+    overflow-y: auto;
+
+    @include respond (tab-port) {
+        width: auto;
+        float: none;
+        border-radius: 20px;
+    }
 }
 
 .message__right__content__inner {
@@ -275,6 +362,25 @@
 .message__right__top__profile {
     width: 50%;
     float: left;
+
+    @include respond (tab-land) {
+        width: 70%;
+    }
+
+    @include respond (phone) {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+
+    @include respond (phone-middle) {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+
+    @include respond (phone-small) {
+        width: 100%;
+        margin-bottom: 10px;
+    }
 
     .news__right__member__item {
         display: inline-block;
@@ -298,10 +404,33 @@
     float: left;
     text-align: right;
 
+    @include respond (tab-land) {
+        width: 30%;
+    }
+
+    @include respond (phone) {
+        width: 100%;
+        text-align: left;
+    }
+
+    @include respond (phone-middle) {
+        width: 100%;
+        text-align: left;
+    }
+
+    @include respond (phone-small) {
+        width: 100%;
+        text-align: left;
+    }
+
     a {
         display: inline-block;
         margin-right: 16px;
         padding: 5px;
+
+        @include respond (tab-land) {
+            margin-right: 5px;
+        }
 
         &:last-child {
             margin-right: 0;
@@ -367,6 +496,18 @@
     float: left;
     margin-right: 15px;
 
+    @include respond (phone) {
+        float: none;
+    }
+
+    @include respond (phone-middle) {
+        float: none;
+    }
+
+    @include respond (phone-small) {
+        float: none;
+    }
+
     img {
         border-radius: 20px;
         border-top-right-radius: 0;
@@ -378,6 +519,37 @@
 .message__chat__item__text {
     padding-left: calc(100% - 450px);
 
+    @include respond (desktop) {
+        padding-left: calc(100% - 450px);
+    }
+
+    @include respond (tab-land) {
+        padding-left: calc(100% - 433px);
+    }
+
+    @include respond (tab-port) {
+        padding-left: calc(100% - 450px);
+    }
+
+    @include respond (tab-middle) {
+        padding-left: calc(100% - 330px);
+    }
+
+    @include respond (phone) {
+        padding-left: 0;
+        padding-top: 15px;
+    }
+
+    @include respond (phone-middle) {
+        padding-left: 0;
+        padding-top: 15px;
+    }
+
+    @include respond (phone-small) {
+        padding-left: 0;
+        padding-top: 15px;
+    }
+    
     p {
         color: $heading-color;
         font-size: 15px;
@@ -422,12 +594,36 @@
     overflow: hidden;
     margin-right: -10px;
 
+    @include respond (phone) {
+        padding-top: 15px;
+    }
+
+    @include respond (phone-middle) {
+        padding-top: 15px;
+    }
+
+    @include respond (phone-small) {
+        padding-top: 15px;
+    }
+
     a {
         width: calc(33.33% - 10px);
         float: left;
         display: block;
         margin-right: 10px;
         margin-bottom: 10px;
+
+        @include respond (phone) {
+            width: 100%;
+        }
+
+        @include respond (phone-medium) {
+            width: 100%;
+        }
+    
+        @include respond (phone-small) {
+            width: 100%;
+        }
 
         &.f_pic {
             
@@ -447,8 +643,15 @@
     
     form {
         margin-right: -10px;
-        overflow: hidden;
         height: 46px;
+
+        @include respond (phone) {
+            margin-right: 0;
+        }
+
+        @include respond (phone-small) {
+            margin-right: 0;
+        }
         
         .message__chat__form__text {
             background: #f4f4fe;
@@ -458,6 +661,21 @@
             float: left;
             margin-right: 10px;
             height: 46px;
+
+            @include respond (desktop) {
+                width: calc(65% - 30px);
+            }
+            
+            @include respond (tab-middle) {
+                width: 100%;
+                margin-bottom: 20px;
+            }
+
+            @include respond (phone) {
+                width: 100%;
+                margin-bottom: 20px;
+            }
+
 
             a {
                 position: absolute;
@@ -480,6 +698,14 @@
                 &::placeholder {
                     color: #888;
                     font-size: 13px;
+
+                    @include respond (phone) {
+                        font-size: 11px;
+                    }
+
+                    @include respond (phone-small) {
+                        font-size: 11px;
+                    }
                 }
             }
 
@@ -495,6 +721,22 @@
         .message__chat__form__options {
             float: left;
             width: calc(28% - 10px);
+
+            @include respond (desktop) {
+                width: calc(41% - 30px);
+            }
+
+            @include respond (tab-land) {
+                width: calc(43% - 30px);
+            }
+
+            @include respond (tab-middle) {
+                width: 100%;
+            }
+
+            @include respond (phone) {
+                width: 100%;
+            }
         }
 
         .message__chat__form__options__list {
@@ -524,6 +766,18 @@
 
 .message__right__chat {
     padding-bottom: 80px;
+
+    @include respond (phone) {
+        padding-bottom: 100px;
+    }
+
+    @include respond (phone-medium) {
+        padding-bottom: 100px;
+    }
+
+    @include respond (phone-small) {
+        padding-bottom: 100px;
+    }
 }
 
 .message__right__chat__form {
@@ -532,4 +786,16 @@
     bottom: 0;
     width: 100%;
     background: $white-color;
+
+    @include respond (phone) {
+        position: relative;
+    }
+
+    @include respond (phone-medium) {
+        position: relative;
+    }
+
+    @include respond (phone-small) {
+        position: relative;
+    }
 }

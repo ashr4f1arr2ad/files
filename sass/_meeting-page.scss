@@ -32,6 +32,10 @@
             float: left;
             position: relative;
             margin-bottom: 15px;
+
+            @include respond (tab-land) {
+                width: 50%;
+            }
     
             &:after {
                 position: absolute;
@@ -40,6 +44,14 @@
                 content: ":";
                 font-size: 24px;
                 color: #555;
+
+                @include respond (desktop) {
+                    display: none;
+                }
+
+                @include respond (tab-land) {
+                    display: none;
+                }
             }
     
             span {
@@ -103,6 +115,14 @@
                 height: 12px;
                 background: #888;
                 content: "";
+
+                @include respond (desktop) {
+                    display: none;
+                }
+
+                @include respond (tab-land) {
+                    display: none;
+                }
             }
 
             input {
@@ -115,9 +135,27 @@
                 line-height: 15px;
                 padding-bottom: 5px;
 
+                @include respond (desktop) {
+                    width: auto;
+                    padding-left: 0;
+                }
+
+                @include respond (tab-land) {
+                    width: auto;
+                    padding-left: 0;
+                }
+
                 &.time__short {
                     width: 38%;
                     padding-left: 0;
+
+                    @include respond (desktop) {
+                        width: auto;
+                    }
+
+                    @include respond (tab-land) {
+                        width: auto;
+                    }
                 }
             }
         }

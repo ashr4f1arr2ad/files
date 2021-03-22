@@ -23,6 +23,14 @@
         .nav-item {
             margin-right: 36px;
 
+            @include respond (phone) {
+                margin-right: 18px;
+            }
+
+            @include respond (phone-small) {
+                margin-right: 18px;
+            }
+
             &:last-child {
                 margin-right: 0;
             }
@@ -68,7 +76,7 @@
                     position: relative;
 
                     &:last-child {
-                        
+
                         &:after {
                             display: none;
                         }
@@ -89,16 +97,45 @@
 .search__profile__item {
     overflow: hidden;
     float: left;
+
+    @include respond (tab-land) {
+        float: none;
+    }
+
+    @include respond (tab-port) {
+        float: left;
+    }
+
+    @include respond (tab-middle) {
+        float: none;
+    }
+
+    @include respond (phone) {
+        float: none;
+    }
+
+    @include respond (phone-small) {
+        float: none;
+    }
 }
 
 .search__profile__item__pic {
     float: left;
     margin-right: 25px;
     position: relative;
+    height: 70px;
+    width: 70px;
+
+    @include respond (phone) {
+        float: none;
+    }
+
+    @include respond (phone-small) {
+        float: none;
+    }
 
     img {
-        height: 70px;
-        width: 70px;
+        min-width: 100%;
         border-radius: 25px;
     }
 
@@ -167,7 +204,27 @@
 .search__profile__item__links {
     float: right;
     padding-top: 20px;
-    
+
+    @include respond (tab-land) {
+        float: none;
+    }
+
+    @include respond (tab-port) {
+        float: right;
+    }
+
+    @include respond (tab-middle) {
+        float: none;
+    }
+
+    @include respond (phone) {
+        float: none;
+    }
+
+    @include respond (phone-small) {
+        float: none;
+    }
+
     a {
         display: inline-block;
         margin-right: 20px;

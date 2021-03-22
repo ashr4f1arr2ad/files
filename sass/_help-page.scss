@@ -1,6 +1,13 @@
 /*---------------------
   Help Page
 -----------------------*/
+.help__center__left {
+
+    @include respond (phone) {
+        margin-bottom: 25px;
+    }
+}
+
 .help__center__left__item {
     margin-bottom: 24px;
 
@@ -177,4 +184,8 @@
     border-radius: 20px;
     padding: 30px;
     margin-left: -30px;
+
+    @include respond (phone) {
+        margin-left: 0;
+    }
 }

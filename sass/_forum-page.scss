@@ -11,6 +11,10 @@
 
 .forum__left__main {
 
+    @include respond (tab-port) {
+        overflow-x: auto;
+    }
+
     table {
         width: 100%;
     }
@@ -69,6 +73,10 @@
 
                 &.forum__item {
                     width: 495px;
+
+                    @include respond (desktop) {
+                        width: auto;
+                    }
                 }
 
                 .forum__item__pic {
@@ -76,6 +84,14 @@
                     margin-right: 20px;
                     height: 50px;
                     width: 50px;
+
+                    @include respond (phone) {
+                        float: none;
+                    }
+                
+                    @include respond (phone-small) {
+                        float: none;
+                    }
 
                     img {
                         min-width: 100%;
@@ -86,6 +102,14 @@
 
                 .forum__item__text {
                     overflow: hidden;
+
+                    @include respond (phone) {
+                        padding-top: 15px;
+                    }
+                
+                    @include respond (phone-small) {
+                        padding-top: 15px;
+                    }
 
                     h5 {
                         
@@ -137,6 +161,10 @@
     background: $white-color;
     padding: 30px;
     border-radius: 20px;
+
+    @include respond (tab-port) {
+        margin-bottom: 25px;
+    }
 }
 
 .forum__pagi {
@@ -169,10 +197,18 @@
 .forum__statis__item__pic {
     float: left;
     margin-right: 20px;
+
+    @include respond (tab-land) {
+        float: none;
+    }
 }
 
 .forum__statis__item__text {
     overflow: hidden;
+
+    @include respond (tab-land) {
+        padding-top: 10px;
+    }
 
     h4 {
         color: #555;

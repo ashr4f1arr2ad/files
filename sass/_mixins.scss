@@ -35,7 +35,7 @@ $breakpoint argument choices:
         @media only screen and (max-width: 75em){ @content };   //1200px
     }
     @if $breakpoint == desktop {
-        @media only screen and (max-width: 90.06em){ @content };   //1500px
+        @media only screen and (max-width: 87.5em){ @content };   //1400px
     }
     @if $breakpoint == mid-desktop {
         @media only screen and (max-width: 112em){ @content };   //max-1800px
@@ -45,6 +45,10 @@ $breakpoint argument choices:
     }
   
     //for navbar control only 
+
+    @if $breakpoint == tab-991 {
+        @media only screen and (max-width: 61.93em){ @content };    //991px
+    }
     
     @if $breakpoint == tab-991 {
       @media only screen and (max-width: 61.93em){ @content };    //991px

@@ -37,7 +37,7 @@
     padding: 18px 20px 30px;
 
     h6 {
-        
+
         a {
             font-weight: 500;
             color: $heading-color;
@@ -90,7 +90,7 @@
 -----------------------*/
 .news__post__make {
     background: $white-color;
-    padding: 20px 30px 0;
+    padding: 20px 30px 20px;
     border-radius: 30px;
     margin-bottom: 20px;
 }
@@ -114,6 +114,14 @@
         padding-top: 15px;
         padding-right: 25px;
 
+        @include respond (phone) {
+            width: 100%;
+        }
+
+        @include respond (phone-small) {
+            width: 100%;
+        }
+
         &::placeholder {
             color: #888;
         }
@@ -123,6 +131,14 @@
         height: 50px;
         width: 50px;
         float: left;
+
+        @include respond (phone) {
+            float: none;
+        }
+
+        @include respond (phone-small) {
+            float: none;
+        }
 
         a {
             display: block;
@@ -144,6 +160,22 @@
 
 .news__post__make__widget__list {
     float: left;
+
+    @include respond (desktop) {
+        float: none;
+    }
+
+    @include respond (tab-port) {
+        float: left;
+    }
+
+    @include respond (tab-middle) {
+        float: none;
+    }
+
+    @include respond (phone) {
+        float: none;
+    }
 }
 
 .post__make__item {
@@ -187,7 +219,24 @@
 
 .news__post__make__widget__btn {
     float: right;
-    
+    margin-bottom: 10px;
+
+    @include respond (desktop) {
+        float: none;
+    }
+
+    @include respond (tab-port) {
+        float: right;
+    }
+
+    @include respond (tab-middle) {
+        float: none;
+    }
+
+    @include respond (phone) {
+        float: none;
+    }
+
     button {
         color: $white-color;
         font-size: 14px;
@@ -223,7 +272,7 @@
 
         button {
             border: none;
-            background: transparent;
+            background: $white-color;
             position: absolute;
             right: 0;
             top: -1px;
@@ -235,7 +284,8 @@
         a {
             display: inline-block;
             margin-right: 6px;
-            
+            margin-bottom: 10px;
+
             img {
                 border-radius: 15px;
             }
@@ -261,8 +311,16 @@
                 color: $white-color;
                 position: relative;
 
+                @include respond (phone) {
+                    color: $heading-color;
+                }
+
+                @include respond (phone-small) {
+                    color: $heading-color;
+                }
+
                 &:after {
-                    position:absolute;
+                    position: absolute;
                     right: -11px;
                     top: 0;
                     content: "|";
@@ -302,10 +360,45 @@
             float: left;
             width: 295px;
             margin-bottom: 0;
+
+            @include respond (tab-port) {
+                width: 250px;
+            }
+
+            @include respond (tab-middle) {
+                width: auto;
+                float: none;
+            }
+
+            @include respond (tab-middle) {
+                margin-bottom: 15px;
+            }
+
+            @include respond (phone) {
+                width: auto;
+                float: none;
+            }
+
+            @include respond (phone-small) {
+                width: auto;
+                float: none;
+            }
         }
 
         p {
             float: left;
+
+            @include respond (tab-middle) {
+                float: none;
+            }
+
+            @include respond (phone) {
+                float: none;
+            }
+
+            @include respond (phone-small) {
+                float: none;
+            }
         }
 
         span {
@@ -337,7 +430,30 @@
 
             span {
                 width: 295px;
+                display: block;
                 float: left;
+
+                @include respond (tab-middle) {
+                    float: none;
+                    width: 100%;
+                    margin-bottom: 10px;
+                }
+    
+                @include respond (phone) {
+                    float: none;
+                    width: 100%;
+                    margin-bottom: 10px;
+                }
+    
+                @include respond (phone-small) {
+                    float: none;
+                    width: 100%;
+                    margin-bottom: 10px;
+                }
+
+                @include respond (tab-port) {
+                    width: 250px;
+                }
             }
 
             p {

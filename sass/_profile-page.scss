@@ -15,9 +15,10 @@
 
     a {
         display: block;
-        
+
         img {
             border-radius: 30px 30px 0 0;
+            height: 100%;
         }
     }
 }
@@ -28,10 +29,18 @@
     position: absolute;
     left: 20px;
     bottom: -45px;
-    
+
+    @include respond (phone) {
+        bottom: 60px;
+    }
+
+    @include respond (phone-small) {
+        bottom: 60px;
+    }
+
     a {
         display: block;
-        
+
         img {
             min-width: 100%;
             border: 5px solid $white-color;
@@ -45,22 +54,67 @@
     left: 180px;
     bottom: 20px;
 
+    @include respond (phone) {
+        position: relative;
+        left: 0;
+        bottom: 0;
+        padding: 30px 20px 0;
+    }
+
+    @include respond (phone-small) {
+        position: relative;
+        left: 0;
+        bottom: 0;
+        padding: 45px 20px 0;
+    }
+
     h5 {
         font-size: 20px;
         color: $white-color;
         font-weight: 600;
         margin-bottom: 2px;
+
+        @include respond (phone) {
+            color: $heading-color
+        }
+
+        @include respond (phone-small) {
+            color: $heading-color
+        }
     }
 
     span {
         color: $white-color;
         display: block;
         font-size: 14px;
+
+        @include respond (phone) {
+            color: $heading-color
+        }
+
+        @include respond (phone-small) {
+            color: $heading-color
+        }
     }
 }
 
 .profile__top__nav {
     padding: 18px 30px 18px 180px;
+
+    @include respond (phone) {
+        padding: 18px 20px 30px 20px;
+    }
+
+    @include respond (phone-small) {
+        padding: 18px 20px 30px 20px;
+    }
+}
+
+.profile__top__nav__widgets {
+
+    @include respond (phone) {
+        margin-bottom: 10px;
+    }
 }
 
 .profile__top__nav__widgets {
@@ -80,6 +134,14 @@
         .nav-item {
             margin-right: 34px;
             display: inline-block;
+
+            @include respond (tab-land) {
+                margin-right: 0;
+            }
+
+            @include respond (phone) {
+                margin-right: 0;
+            }
 
             .nav-link {
                 color: $heading-color;
@@ -133,6 +195,10 @@
                 z-index: 9;
                 @include transition(all, .3s);
 
+                @include respond (phone) {
+                    right: 0;
+                }
+
                 a {
                     display: block;
                     font-size: 15px;
@@ -148,10 +214,36 @@
 .profile__top__nav__links {
     text-align: right;
 
+    @include respond (tab-middle) {
+        text-align: left;
+        margin-top: 15px;
+    }
+
+    @include respond (phone) {
+        text-align: left;
+    }
+
     a {
         display: inline-block;
         margin-right: 15px;
         padding: 5px;
+
+        @include respond (desktop) {
+            margin-right: 12px;
+        }
+
+        @include respond (tab-land) {
+            padding: 0;
+            margin-right: 8px;
+        }
+
+        @include respond (tab-middle) {
+            margin-right: 15px;
+        }
+
+        @include respond (phone) {
+            margin-right: 15px;
+        }
 
         &:last-child {
             margin-right: 0;
@@ -160,18 +252,31 @@
 }
 
 .profile__chat {
-    
+
     .message__right__chat {
         background: $white-color;
         border-radius: 20px;
         height: 770px;
         padding: 30px 30px 110px;
         position: relative;
+        overflow-y: auto;
 
         .message__right__chat__form {
             width: calc(100% - 60px);
             left: 30px;
             bottom: 30px;
+
+            @include respond (phone) {
+                width: 100%;
+                left: 0;
+                bottom: 0;
+            }
+    
+            @include respond (phone-small) {
+                width: 100%;
+                left: 0;
+                bottom: 0;
+            }
         }
     }
 }
@@ -184,6 +289,18 @@
 }
 
 .profile__about__info {
+
+    @include respond (tab-middle) {
+        overflow-x: auto;
+    }
+
+    @include respond (phone) {
+        overflow-x: auto;
+    }
+
+    @include respond (phone-small) {
+        overflow-x: auto;
+    }
 
     &.profile__about__detail {
         margin-top: 50px;
@@ -200,7 +317,7 @@
 
         tr {
             border-bottom: 1px solid #ebebeb;
-            
+
             td {
                 padding-bottom: 20px;
                 padding-top: 20px;
@@ -209,6 +326,22 @@
                     font-size: 15px;
                     color: $heading-color;
                     width: 330px;
+
+                    @include respond (tab-port) {
+                        width: 220px;
+                    }
+
+                    @include respond (tab-middle) {
+                        width: auto;
+                    }
+        
+                    @include respond (phone) {
+                        width: auto;
+                    }
+        
+                    @include respond (phone-small) {
+                        width: auto;
+                    }
                 }
 
                 &.about__op__text {
