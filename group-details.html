@@ -7,7 +7,7 @@
     <meta name="keywords" content="PestControl, unica, creative, html">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
+    <title>Intranet</title>
 
     <!-- Google Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800;900&display=swap"
@@ -24,6 +24,11 @@
 </head>
 
 <body>
+    <!-- Page Preloder -->
+    <div id="preloder">
+        <div class="loader"></div>
+    </div>
+    
     <!-- Header Section Begin -->
     <header class="header">
         <div class="header__container">
@@ -49,7 +54,7 @@
     <!-- Header Section End -->
 
     <!-- Newsfeed Section Begin -->
-    <section class="newsfeed">
+    <div class="newsfeed">
         <div class="container">
             <div class="news__left">
                 <div class="news__left__item">
@@ -177,13 +182,16 @@
                                 <div class="profile__top__nav__widgets">
                                     <ul class="nav nav-tabs" id="myTab" role="tablist">
                                         <li class="nav-item" role="presentation">
-                                          <button class="nav-link active" data-bs-toggle="tab" data-bs-target="#tab1" type="button" role="tab">Newfeed</button>
+                                            <button class="nav-link active" data-bs-toggle="tab" data-bs-target="#tab1"
+                                                type="button" role="tab">Newfeed</button>
                                         </li>
                                         <li class="nav-item" role="presentation">
-                                          <button class="nav-link" data-bs-toggle="tab" data-bs-target="#tab2" type="button" role="tab">Chat</button>
+                                            <button class="nav-link" data-bs-toggle="tab" data-bs-target="#tab2"
+                                                type="button" role="tab">Chat</button>
                                         </li>
                                         <li class="nav-item" role="presentation">
-                                          <button class="nav-link" data-bs-toggle="tab" data-bs-target="#tab3" type="button" role="tab">About</button>
+                                            <button class="nav-link" data-bs-toggle="tab" data-bs-target="#tab3"
+                                                type="button" role="tab">About</button>
                                         </li>
                                     </ul>
                                     <div class="more__link">
@@ -218,7 +226,8 @@
                                             <div class="news__search__member">
                                                 <form action="#">
                                                     <input type="text" placeholder="Find and add members">
-                                                    <button type="submit"><img src="img/group/g-icon/4.png" alt=""></button>
+                                                    <button type="submit"><img src="img/group/g-icon/4.png"
+                                                            alt=""></button>
                                                 </form>
                                                 <div class="news__search__member__list">
                                                     <a href="#"><img src="img/group/ms-1.jpg" alt=""></a>
@@ -304,14 +313,19 @@
                                                     <a href="#"><img src="img/group/details/profile.jpg" alt=""></a>
                                                 </div>
                                                 <textarea placeholder="What’s on your mind?"></textarea>
-                                                <div class="post__edit"><img src="img/group/g-icon/pencil.png" alt=""></div>
+                                                <div class="post__edit"><img src="img/group/g-icon/pencil.png" alt="">
+                                                </div>
                                             </div>
                                             <div class="news__post__make__widget">
                                                 <div class="news__post__make__widget__list">
-                                                    <div class="post__make__item"><img src="img/group/g-icon/gi-1.png" alt=""> Add photo</div>
-                                                    <div class="post__make__item video"><img src="img/group/g-icon/gi-2.png" alt=""> Add video</div>
-                                                    <div class="post__make__item live"><img src="img/group/g-icon/gi-3.png" alt=""></div>
-                                                    <div class="post__make__item more"><img src="img/group/g-icon/gi-4.png" alt=""></div>
+                                                    <div class="post__make__item"><img src="img/group/g-icon/gi-1.png"
+                                                            alt=""> Add photo</div>
+                                                    <div class="post__make__item video"><img
+                                                            src="img/group/g-icon/gi-2.png" alt=""> Add video</div>
+                                                    <div class="post__make__item live"><img
+                                                            src="img/group/g-icon/gi-3.png" alt=""></div>
+                                                    <div class="post__make__item more"><img
+                                                            src="img/group/g-icon/gi-4.png" alt=""></div>
                                                 </div>
                                                 <div class="news__post__make__widget__btn">
                                                     <button type="submit">Post</button>
@@ -335,7 +349,8 @@
                                             <img src="img/icons/p-icon/more.png" alt="">
                                         </div>
                                         <div class="news__post__item__desc">
-                                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod.</p>
+                                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod.
+                                            </p>
                                         </div>
                                         <div class="news__post__pic">
                                             <div class="news__post__pic__item">
@@ -383,7 +398,8 @@
                                             <img src="img/icons/p-icon/more.png" alt="">
                                         </div>
                                         <div class="news__post__item__desc">
-                                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod.</p>
+                                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod.
+                                            </p>
                                         </div>
                                         <div class="news__post__pic news__post__pic__single">
                                             <a href="#"><img src="img/posts/pp-4.jpg" alt=""></a>
@@ -425,14 +441,16 @@
                                             <img src="img/icons/p-icon/more.png" alt="">
                                         </div>
                                         <div class="news__post__item__desc">
-                                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod.</p>
+                                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod.
+                                            </p>
                                         </div>
                                         <div class="news__post__video">
                                             <video id="player" playsinline controls data-poster="/videos/poster-1.jpg">
                                                 <source src="videos/1.mp4" type="video/mp4" />
                                                 <!-- Captions are optional -->
-                                                <track kind="captions" label="English captions" src="#" srclang="en" default />
-                                              </video>
+                                                <track kind="captions" label="English captions" src="#" srclang="en"
+                                                    default />
+                                            </video>
                                         </div>
                                         <div class="news__post__option">
                                             <div class="news__post__option__item">
@@ -466,7 +484,8 @@
                                         <div class="message__chat__item__text">
                                             <p>
                                                 Consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore.
-                                                <span class="r_icon"><img src="img/icons/m-icon/react.png" alt=""></span>
+                                                <span class="r_icon"><img src="img/icons/m-icon/react.png"
+                                                        alt=""></span>
                                             </p>
                                         </div>
                                     </div>
@@ -484,7 +503,8 @@
                                     <div class="message__chat__item message__chat__item--right">
                                         <span class="message__time">9:00am</span>
                                         <div class="message__chat__item__text">
-                                            <p>Consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore.</p>
+                                            <p>Consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore.
+                                            </p>
                                             <img src="img/icons/m-icon/seen.png" alt="" class="msg__seen">
                                         </div>
                                     </div>
@@ -497,7 +517,7 @@
                                             <div class="message__chat__item__audio">
                                                 <audio id="player2" controls>
                                                     <source src="audio/1.mp3" type="audio/mp3" />
-                                                  </audio>
+                                                </audio>
                                             </div>
                                         </div>
                                     </div>
@@ -535,11 +555,15 @@
                                 <div class="group__details__about__text">
                                     <div class="group__details__about__text__item">
                                         <h6>Introduce</h6>
-                                        <p>Welcome to the official Facebook of Sony Vietnam. Curiosity is the key to creativity. The best things come from the power of imagination.</p>
+                                        <p>Welcome to the official Facebook of Sony Vietnam. Curiosity is the key to
+                                            creativity. The best things come from the power of imagination.</p>
                                     </div>
                                     <div class="group__details__about__text__item">
                                         <h6>Private information</h6>
-                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis.</p>
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                                            tempor incididunt ut labore et dolore magna aliqua.Quis ipsum suspendisse
+                                            ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel
+                                            facilisis.</p>
                                     </div>
                                     <div class="group__details__about__text__item one__line__item">
                                         <h6>Introduce</h6>
@@ -590,7 +614,7 @@
                 </div>
             </div>
         </div>
-    </section>
+    </div>
     <!-- Newsfeed Section End -->
 
     <!-- Js Plugins -->

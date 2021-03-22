@@ -10,6 +10,10 @@
 .group__item__pic__cover {
     height: 130px;
 
+    @include respond (phone) {
+        margin-bottom: 30px;
+    }
+
     img {
         min-width: 100%;
         border-top-left-radius: 20px;
@@ -23,6 +27,10 @@
     width: 70px;
     margin: 0 auto;
     margin-top: -38px;
+
+    @include respond (phone) {
+        margin-top: 0;
+    }
 
     img {
         min-width: 100%;
@@ -310,6 +318,10 @@
                 margin-right: 15px;
                 color: $white-color;
                 position: relative;
+
+                @include respond (tab-middle) {
+                    color: $heading-color;
+                }
 
                 @include respond (phone) {
                     color: $heading-color;

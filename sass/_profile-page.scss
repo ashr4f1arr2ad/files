@@ -30,6 +30,10 @@
     left: 20px;
     bottom: -45px;
 
+    @include respond (tab-middle) {
+        bottom: 60px;
+    }
+
     @include respond (phone) {
         bottom: 60px;
     }
@@ -54,6 +58,13 @@
     left: 180px;
     bottom: 20px;
 
+    @include respond (tab-middle) {
+        position: relative;
+        left: 0;
+        bottom: 0;
+        padding: 30px 20px 0;
+    }
+
     @include respond (phone) {
         position: relative;
         left: 0;
@@ -74,12 +85,19 @@
         font-weight: 600;
         margin-bottom: 2px;
 
+        @include respond (tab-middle) {
+            color: $heading-color;
+            margin-bottom: 8px;
+        }
+
         @include respond (phone) {
-            color: $heading-color
+            color: $heading-color;
+            margin-bottom: 8px;
         }
 
         @include respond (phone-small) {
-            color: $heading-color
+            color: $heading-color;
+            margin-bottom: 8px;
         }
     }
 
@@ -87,6 +105,10 @@
         color: $white-color;
         display: block;
         font-size: 14px;
+
+        @include respond (tab-middle) {
+            color: $heading-color
+        }
 
         @include respond (phone) {
             color: $heading-color
@@ -100,6 +122,10 @@
 
 .profile__top__nav {
     padding: 18px 30px 18px 180px;
+
+    @include respond (tab-middle) {
+        padding: 18px 20px 30px 20px;
+    }
 
     @include respond (phone) {
         padding: 18px 20px 30px 20px;
@@ -260,6 +286,13 @@
         padding: 30px 30px 110px;
         position: relative;
         overflow-y: auto;
+
+        .message__chat__item__text {
+
+            @include respond (tab-land) {
+                padding-left: calc(100% - 450px);
+            }
+        }
 
         .message__right__chat__form {
             width: calc(100% - 60px);

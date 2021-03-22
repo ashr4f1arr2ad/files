@@ -286,6 +286,7 @@
     float: left;
     padding-left: 25px;
     position: relative;
+    display: block;
 
     @include respond (phone) {
         float: none;
@@ -297,13 +298,13 @@
         width: 100%;
     }
 
-    h6 {
+    .subtask__title {
         font-size: 15px;
         color: $heading-color;
         display: inline-block;
     }
 
-    div {
+    .task__checkbox {
         display: inline-block;
         position: absolute;
         left: 0;
@@ -351,6 +352,7 @@
     width: 50%;
     float: left;
     text-align: right;
+    display: block;
 
     @include respond (phone) {
         float: none;

@@ -25,11 +25,11 @@
   }
 
   @include respond (phone) {
-      margin-right: 0;
+    margin-right: 0;
   }
 
   @include respond (phone-small) {
-      margin-right: 0;
+    margin-right: 0;
   }
 }
 
@@ -81,7 +81,7 @@
     @include respond (tab-middle) {
       width: 100%;
     }
-    
+
     @include respond (phone) {
       margin-bottom: 20px;
       width: 100%;
@@ -145,7 +145,7 @@
 
   h5 {
     margin-bottom: 12px;
-    
+
     a {
       font-size: 20px;
       font-weight: 500;

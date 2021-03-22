@@ -1,6 +1,6 @@
 /*  ---------------------------------------------------
-    Template Name: Dreams
-    Description: Dreams wedding template
+    Template Name: Intranet
+    Description: Intranet - Template
     Author: Colorib
     Author URI: https://colorlib.com/
     Version: 1.0
@@ -14,10 +14,10 @@
     /*------------------
         Preloader
     --------------------*/
-    // $(window).on('load', function () {
-    //     $(".loader").fadeOut();
-    //     $("#preloder").delay(200).fadeOut("slow");
-    // });
+    $(window).on('load', function () {
+        $(".loader").fadeOut();
+        $("#preloder").delay(200).fadeOut("slow");
+    });
 
     /*------------------
         Background Set

@@ -7,7 +7,7 @@
     <meta name="keywords" content="PestControl, unica, creative, html">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
+    <title>Intranet</title>
 
     <!-- Google Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800;900&display=swap"
@@ -24,6 +24,11 @@
 </head>
 
 <body>
+    <!-- Page Preloder -->
+    <div id="preloder">
+        <div class="loader"></div>
+    </div>
+
     <!-- Header Section Begin -->
     <header class="header">
         <div class="header__container">
@@ -49,7 +54,7 @@
     <!-- Header Section End -->
 
     <!-- Newsfeed Section Begin -->
-    <section class="newsfeed">
+    <div class="newsfeed">
         <div class="container">
             <div class="news__left">
                 <div class="news__left__item">
@@ -174,13 +179,16 @@
                                 <div class="profile__top__nav__widgets">
                                     <ul class="nav nav-tabs" id="myTab" role="tablist">
                                         <li class="nav-item" role="presentation">
-                                          <button class="nav-link active" data-bs-toggle="tab" data-bs-target="#tab1" type="button" role="tab">Newfeed</button>
+                                            <button class="nav-link active" data-bs-toggle="tab" data-bs-target="#tab1"
+                                                type="button" role="tab">Newfeed</button>
                                         </li>
                                         <li class="nav-item" role="presentation">
-                                          <button class="nav-link" data-bs-toggle="tab" data-bs-target="#tab2" type="button" role="tab">Chat</button>
+                                            <button class="nav-link" data-bs-toggle="tab" data-bs-target="#tab2"
+                                                type="button" role="tab">Chat</button>
                                         </li>
                                         <li class="nav-item" role="presentation">
-                                          <button class="nav-link" data-bs-toggle="tab" data-bs-target="#tab3" type="button" role="tab">About</button>
+                                            <button class="nav-link" data-bs-toggle="tab" data-bs-target="#tab3"
+                                                type="button" role="tab">About</button>
                                         </li>
                                     </ul>
                                     <div class="more__link">
@@ -341,7 +349,8 @@
                                             <img src="img/icons/p-icon/more.png" alt="">
                                         </div>
                                         <div class="news__post__item__desc">
-                                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod.</p>
+                                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod.
+                                            </p>
                                         </div>
                                         <div class="news__post__pic">
                                             <div class="news__post__pic__item">
@@ -391,7 +400,8 @@
                                             <img src="img/icons/p-icon/more.png" alt="">
                                         </div>
                                         <div class="news__post__item__desc">
-                                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod.</p>
+                                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod.
+                                            </p>
                                         </div>
                                         <div class="news__post__pic news__post__pic__single">
                                             <a href="#"><img src="img/posts/pp-4.jpg" alt=""></a>
@@ -435,14 +445,16 @@
                                             <img src="img/icons/p-icon/more.png" alt="">
                                         </div>
                                         <div class="news__post__item__desc">
-                                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod.</p>
+                                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod.
+                                            </p>
                                         </div>
                                         <div class="news__post__video">
                                             <video id="player" playsinline controls data-poster="/videos/poster-1.jpg">
                                                 <source src="videos/1.mp4" type="video/mp4" />
                                                 <!-- Captions are optional -->
-                                                <track kind="captions" label="English captions" src="#" srclang="en" default />
-                                              </video>
+                                                <track kind="captions" label="English captions" src="#" srclang="en"
+                                                    default />
+                                            </video>
                                         </div>
                                         <div class="news__post__option">
                                             <div class="news__post__option__item">
@@ -476,7 +488,8 @@
                                         <div class="message__chat__item__text">
                                             <p>
                                                 Consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore.
-                                                <span class="r_icon"><img src="img/icons/m-icon/react.png" alt=""></span>
+                                                <span class="r_icon"><img src="img/icons/m-icon/react.png"
+                                                        alt=""></span>
                                             </p>
                                         </div>
                                     </div>
@@ -494,7 +507,8 @@
                                     <div class="message__chat__item message__chat__item--right">
                                         <span class="message__time">9:00am</span>
                                         <div class="message__chat__item__text">
-                                            <p>Consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore.</p>
+                                            <p>Consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore.
+                                            </p>
                                             <img src="img/icons/m-icon/seen.png" alt="" class="msg__seen">
                                         </div>
                                     </div>
@@ -507,7 +521,7 @@
                                             <div class="message__chat__item__audio">
                                                 <audio id="player2" controls>
                                                     <source src="audio/1.mp3" type="audio/mp3" />
-                                                  </audio>
+                                                </audio>
                                             </div>
                                         </div>
                                     </div>
@@ -548,27 +562,32 @@
                                             <tr>
                                                 <td class="about__op">Name</td>
                                                 <td class="about__op__text">Ida Gill</td>
-                                                <td class="about__edit"><a href="#"><img src="img/icons/profile/edit.png" alt=""></a></td>
+                                                <td class="about__edit"><a href="#"><img
+                                                            src="img/icons/profile/edit.png" alt=""></a></td>
                                             </tr>
                                             <tr>
                                                 <td class="about__op">First name</td>
                                                 <td class="about__op__text">Ida</td>
-                                                <td class="about__edit"><a href="#"><img src="img/icons/profile/edit.png" alt=""></a></td>
+                                                <td class="about__edit"><a href="#"><img
+                                                            src="img/icons/profile/edit.png" alt=""></a></td>
                                             </tr>
                                             <tr>
                                                 <td class="about__op">Last name</td>
                                                 <td class="about__op__text">Gill</td>
-                                                <td class="about__edit"><a href="#"><img src="img/icons/profile/edit.png" alt=""></a></td>
+                                                <td class="about__edit"><a href="#"><img
+                                                            src="img/icons/profile/edit.png" alt=""></a></td>
                                             </tr>
                                             <tr>
                                                 <td class="about__op">Birthdate</td>
                                                 <td class="about__op__text">Aug 20, 1992</td>
-                                                <td class="about__edit"><a href="#"><img src="img/icons/profile/edit.png" alt=""></a></td>
+                                                <td class="about__edit"><a href="#"><img
+                                                            src="img/icons/profile/edit.png" alt=""></a></td>
                                             </tr>
                                             <tr>
                                                 <td class="about__op">Gender</td>
                                                 <td class="about__op__text">Male</td>
-                                                <td class="about__edit"><a href="#"><img src="img/icons/profile/edit.png" alt=""></a></td>
+                                                <td class="about__edit"><a href="#"><img
+                                                            src="img/icons/profile/edit.png" alt=""></a></td>
                                             </tr>
                                         </tbody>
                                     </table>
@@ -580,17 +599,20 @@
                                             <tr>
                                                 <td class="about__op">Biographical info</td>
                                                 <td class="about__op__text">Sono nata a chiaravalle</td>
-                                                <td class="about__edit"><a href="#"><img src="img/icons/profile/edit.png" alt=""></a></td>
+                                                <td class="about__edit"><a href="#"><img
+                                                            src="img/icons/profile/edit.png" alt=""></a></td>
                                             </tr>
                                             <tr>
                                                 <td class="about__op">Passion</td>
                                                 <td class="about__op__text">Travel</td>
-                                                <td class="about__edit"><a href="#"><img src="img/icons/profile/edit.png" alt=""></a></td>
+                                                <td class="about__edit"><a href="#"><img
+                                                            src="img/icons/profile/edit.png" alt=""></a></td>
                                             </tr>
                                             <tr>
                                                 <td class="about__op">Position</td>
                                                 <td class="about__op__text">Systems analyst</td>
-                                                <td class="about__edit"><a href="#"><img src="img/icons/profile/edit.png" alt=""></a></td>
+                                                <td class="about__edit"><a href="#"><img
+                                                            src="img/icons/profile/edit.png" alt=""></a></td>
                                             </tr>
                                         </tbody>
                                     </table>
@@ -601,7 +623,7 @@
                 </div>
             </div>
         </div>
-    </section>
+    </div>
     <!-- Newsfeed Section End -->
 
     <!-- Js Plugins -->
